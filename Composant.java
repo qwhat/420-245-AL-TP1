@@ -6,7 +6,8 @@ public class Composant {
     private double prix;
     private double rabais;
 
-    private Composant(String categorie, String marque, String nom, double prix, double rabais){
+    /* Constructeurs */
+    private Composant(String categorie, String marque, String nom, double prix, double rabais) {
         this.categorie = categorie.trim().length() <= 3 ? categorie.trim().toUpperCase() : categorie;
         this.marque = marque;
         this.nom = nom;
@@ -18,10 +19,12 @@ public class Composant {
             this.prix = 0.0;
         }
     }
-    public Composant (String categorie, String marque, String nom, double prix) {
+
+    public Composant(String categorie, String marque, String nom, double prix) {
         this(categorie, marque, nom, prix,0.0);
     }
-    public Composant (String categorie, double prix) {
+
+    public Composant(String categorie, double prix) {
         this(categorie, "","", prix, 0.0);
     }
 
@@ -29,7 +32,9 @@ public class Composant {
         this(categorie, "","", 0.0, 0.0);
     }
 
-    public double getPrix () {
+    /* Get et Set */
+
+    public double getPrix() {
         return prix - (prix * rabais);
     }
 
@@ -44,15 +49,19 @@ public class Composant {
     public void setRabais(double rabais) {
         this.rabais = rabais;
     }
+
+    /* Crée une copie du composant */
     public Composant copier() {
         return new Composant(this.categorie, this.marque, this.nom, this.prix, this.rabais);
     }
 
+    /* Compare le Composant c au composant actuel en ignorant les majuscules */
     public boolean estPareilQue(Composant c) {
 
         return this.categorie.equalsIgnoreCase(c.categorie) && this.marque.equalsIgnoreCase(c.marque) && this.nom.equalsIgnoreCase(c.nom);
     }
 
+    /* Génère un String plus lisible d'un Composant */
     public String toString() {
         return "[" + categorie + "] " + marque + " " + nom;
     }
