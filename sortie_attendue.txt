@@ -1,0 +1,134 @@
+
+=== Test #1 : Affichage des configurations initiales ===
+
+Configuration vide (montant illimité) :
+Total: 0 composants pour 0,00$ (taxes incluses)
+
+Build Intel Gen13 (max 1250,00$) :
+   1: [CPU] Intel Core i5-13600K (330,00$)
+   2: [Carte mère] Asus ROG Strix B760 (200,00$)
+   3: [RAM] GSkill Trident-Z DDR5 16GB (90,00$)
+   4: [GPU] Asus RTX 4060 (460,00$)
+Total: 4 composants pour 1242,00$ (taxes incluses)
+
+Build AMD Gen5 (max 1000,00$) :
+   1: [CPU] AMD Ryzen 5 5700X (260,00$)
+   2: [Carte mère] MSI B550 Gaming Wifi (150,00$)
+Total: 2 composants pour 471,50$ (taxes incluses)
+
+
+=== Test #2 : Recherche et manipulation de composants ===
+
+[CPU] Intel Core i5-13600K
+CPU
+true
+[Carte mère] MSI B550 Gaming Wifi
+150.0
+0.0
+[RAM] GSkill Trident-Z DDR5 16GB
+RAM
+82.5
+0.25
+true
+null
+
+=== Test #3 : Ajouts de composants ===
+
+[RAM] GSkill Trident-Z DDR4 32GB ajouté à la configuration (total=545,00$)
+[SSD] Western Digital SN850X 1TB ajouté à la configuration (total=645,00$)
+# Rabais de 20% sur [GPU] Gigabyte RTX 4060 (nouveau prix: 320,00$)
+[GPU] Gigabyte RTX 4060 ajouté à la configuration (total=965,00$)
+
+Build AMD Gen5 (max 1000,00$) :
+   1: [CPU] AMD Ryzen 5 5700X (260,00$)
+   2: [Carte mère] MSI B550 Gaming Wifi (150,00$)
+   3: [RAM] GSkill Trident-Z DDR4 32GB (135,00$)
+   4: [SSD] Western Digital SN850X 1TB (100,00$)
+   5: [GPU] Gigabyte RTX 4060 (320,00$)
+Total: 5 composants pour 1109,75$ (taxes incluses)
+
+Il y a déjà un autre composant de cette catégorie: [CPU] AMD Ryzen 5 5700X
+Il y a déjà un autre composant de cette catégorie: [GPU] Gigabyte RTX 4060
+L'ajout de ce composant ferait dépasser le prix maximum: [SSD] Samsung 980 Pro 2TB
+
+=== Test #4 : Retraits de composants ===
+
+[RAM] GSkill Trident-Z DDR4 32GB retiré de la configuration (total=830,00$)
+[GPU] Gigabyte RTX 4060 retiré de la configuration (total=510,00$)
+[CPU] AMD Ryzen 5 5700X retiré de la configuration (total=250,00$)
+
+Build AMD Gen5 (max 1000,00$) :
+   1: [Carte mère] MSI B550 Gaming Wifi (150,00$)
+   2: [SSD] Western Digital SN850X 1TB (100,00$)
+Total: 2 composants pour 287,50$ (taxes incluses)
+
+Composant introuvable: [RAM] GSkill Trident-Z DDR4 32GB
+Composant introuvable: [GPU] Gigabyte RTX 4060
+Composant introuvable: [CPU] AMD Ryzen 5 5700X
+
+=== Test #5 : Copies de configurations ===
+
+Build AMD Gen5 (copie) (max 1000,00$) :
+   1: [Carte mère] MSI B550 Gaming Wifi (150,00$)
+   2: [SSD] Western Digital SN850X 1TB (100,00$)
+Total: 2 composants pour 287,50$ (taxes incluses)
+
+[CPU] AMD Ryzen 7 7800X3D ajouté à la configuration (total=750,00$)
+[Carte mère] MSI B550 Gaming Wifi retiré de la configuration (total=600,00$)
+[RAM] GSkill Trident-Z DDR5 16GB ajouté à la configuration (total=676,50$)
+
+Build AMD Gen7 (max 1000,00$) :
+   1: [SSD] Western Digital SN850X 1TB (87,00$)
+   2: [CPU] AMD Ryzen 7 7800X3D (500,00$)
+   3: [RAM] GSkill Trident-Z DDR5 16GB (76,50$)
+Total: 3 composants pour 763,03$ (taxes incluses)
+
+
+=== Test #6 : Remplacement de composants ===
+
+[SSD] Western Digital SN850X 1TB retiré de la configuration (total=576,50$)
+[SSD] Samsung 980 Pro 2TB ajouté à la configuration (total=826,50$)
+[CPU] AMD Ryzen 7 7800X3D retiré de la configuration (total=326,50$)
+[CPU] AMD Ryzen 7 7800X3D ajouté à la configuration (total=676,50$)
+Il n'y a pas de composant de la catégorie Carte mère
+[GPU] Gigabyte RTX 4060 ajouté à la configuration (total=996,50$)
+[RAM] GSkill Trident-Z DDR5 16GB retiré de la configuration (total=920,00$)
+L'ajout de ce composant ferait dépasser le prix maximum: [RAM] GSkill Trident-Z DDR4 32GB
+[RAM] GSkill Trident-Z DDR5 16GB ajouté à la configuration (total=996,50$)
+
+Build final (max 1000,00$) :
+   1: [SSD] Samsung 980 Pro 2TB (250,00$)
+   2: [CPU] AMD Ryzen 7 7800X3D (350,00$)
+   3: [GPU] Gigabyte RTX 4060 (320,00$)
+   4: [RAM] GSkill Trident-Z DDR5 16GB (76,50$)
+Total: 4 composants pour 1145,98$ (taxes incluses)
+
+
+=== Test #7 : Validation finale ===
+
+Build Intel Gen13 (max 1250,00$) :
+   1: [CPU] Intel Core i5-13600K (330,00$)
+   2: [Carte mère] Asus ROG Strix B760 (200,00$)
+   3: [RAM] GSkill Trident-Z DDR5 16GB (90,00$)
+   4: [GPU] Asus RTX 4060 (460,00$)
+Total: 4 composants pour 1242,00$ (taxes incluses)
+
+Build AMD Gen5 (max 1000,00$) :
+   1: [Carte mère] MSI B550 Gaming Wifi (150,00$)
+   2: [SSD] Western Digital SN850X 1TB (100,00$)
+Total: 2 composants pour 287,50$ (taxes incluses)
+
+Build AMD Gen7 (max 1000,00$) :
+   1: [SSD] Western Digital SN850X 1TB (87,00$)
+   2: [CPU] AMD Ryzen 7 7800X3D (500,00$)
+   3: [RAM] GSkill Trident-Z DDR5 16GB (76,50$)
+Total: 3 composants pour 763,03$ (taxes incluses)
+
+[GPU] Gigabyte RTX 4060 retiré de la configuration (total=676,50$)
+[GPU] Asus RTX 4060 ajouté à la configuration (total=1136,50$)
+Build final (montant illimité) :
+   1: [SSD] Samsung 980 Pro 2TB (250,00$)
+   2: [CPU] AMD Ryzen 7 7800X3D (350,00$)
+   3: [RAM] GSkill Trident-Z DDR5 16GB (76,50$)
+   4: [GPU] Asus RTX 4060 (460,00$)
+Total: 4 composants pour 1306,98$ (taxes incluses)
